@@ -4,12 +4,22 @@
   "version": "4.1.10",
   "author": "liugo",
   "license": "CC0-1.0",
+  "scripts": {
+    "start": "electron .",
+    "package-win": "electron-packager . --overwrite --platform=win32 --arch=x64 --icon=assets/icon.ico --prune=true --out=release-builds",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icon.icns --prune=true --out=release-builds",
+    "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=assets/icon.png --prune=true --out=release-builds"
+  },
   "dependencies": {
+    "electron": "^13.1.7",
     "express": "^4.17.1",
     "js-yaml": "^3.14.0",
     "kill-port": "^1.6.1",
     "request": "^2.88.2",
     "request-promise": "^4.2.5",
     "tcp-ping": "^0.1.1"
+  },
+  "devDependencies": {
+    "electron-packager": "^15.3.0"
   }
 }
