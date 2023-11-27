@@ -38,6 +38,13 @@ function init () {
     win.loadURL('http://127.0.0.1:9000')
     win.webContents.openDevTools()
   }
+  // 添加一个快捷键来打开开发者工具
+  win.webContents.on('before-input-event', (event, input) => {
+    // 按下 Ctrl+Shift+I 或 Cmd+Opt+I 来打开开发者工具
+    if ((input.control || input.meta) && input.shift && input.key.toLowerCase() === 'i') {
+      win.webContents.openDevTools()
+    }
+  });
 
   win.once('ready-to-show', () => {
     win.show()
