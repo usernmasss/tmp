@@ -1,10 +1,10 @@
 {
-  "name": "chaoxi",
+  "name": "liugo",
   "main": "main.js",
   "version": "4.1.9",
   "author": "chaoxi",
   "license": "CC0-1.0",
-  "description": "小葡萄",
+  "description": "liugo",
   "dependencies": {
     "crypto-js": "^4.1.1",
     "express": "^4.17.1",
