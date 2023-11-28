@@ -1,6 +1,7 @@
 {
   "win": "3i云",
   "main": "main.js",
+  "name":"chaoxi",
   "version": "4.1.9",
   "author": "chaoxi",
   "license": "CC0-1.0",
