@@ -1,71 +1,42 @@
 {
-  "name": "tidalab",
+  "win": "3i\u4e91",
   "main": "main.js",
-  "version": "4.1.10",
-  "author": "tidalab",
+  "name": "3i",
+  "version": "4.1.9",
+  "author": "3i",
   "license": "CC0-1.0",
+  "description": "3i",
   "dependencies": {
+    "crypto-js": "^4.1.1",
     "express": "^4.17.1",
     "js-yaml": "^3.14.0",
     "kill-port": "^1.6.1",
+    "ntp-time-sync": "^0.1.0",
     "request": "^2.88.2",
-    "request-promise": "^4.2.5",
-    "tcp-ping": "^0.1.1"
+    "request-promise": "^4.2.5"
+  },
+  "scripts": {
+    "test": "node main.js",
+    "dist": "electron-builder --win --x64",
+    "distmac": "electron-builder --mac"
+  },
+  "devDependencies": {
+    "electron": "^13.0.0"
   },
   "build": {
-    "electronVersion": "11.0.0",
-    "productName": "tidalab",
-    "appId": "com.tidalab",
-    "copyright": "©2023 tidalab, Inc.",
-    "directories": {
-          "test": "node main.js",
-          "dist": "electron-builder --win --x64",
-          "distmac": "electron-builder --mac"
-          "output": "build"
-    },
-    "extraResources": [
-      {
-        "from": "../libs/${env.target}-${arch}",
-        "to": "./libs/${env.target}-${arch}"
-      },
-      {
-        "from": "../libs/geo",
-        "to": "./libs/${env.target}-${arch}"
-      }
-    ],
-    "files": [
-      "main.js",
-      "package.json",
-      "**/*"
-    ],
-    "dmg": {
-      "contents": [
-        {
-          "x": 410,
-          "y": 150,
-          "type": "link",
-          "path": "/Applications"
-        },
-        {
-          "x": 130,
-          "y": 150,
-          "type": "file"
-        }
-      ]
-    },
     "mac": {
-      "icon": "../res/icon.icns"
+      "icon": "./assets/logn.png"
     },
     "win": {
-      "icon": "../res/icon.ico",
-      "target": [
-        "nsis"
-      ]
+      "icon": "./assets/logn.png"
     },
-    "nsis": {
-      "oneClick": false,
-      "perMachine": true,
-      "allowToChangeInstallationDirectory": true
+    "extraResources": {
+      "from": "./libs/",
+      "to": "libs"
+    },
+    "directories": {
+      "output": "packs"
     }
-  }
+  },
+  "icon": "img/logn.jpg"
 }
