@@ -29,6 +29,7 @@ jobs:
   #       # 打包的路径以及文件过滤，此为仅打包dist目录下的exe文件
   #       path: D:\a\tmp\tmp\src\packs\*exe
   # 工作的名称“编译macOS版”
+   # 工作的名称“编译macOS版”
   buildmac:
     # 运行的操作系统 macOS BigSur
     runs-on: macos-11
