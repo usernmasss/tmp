@@ -42,6 +42,9 @@ jobs:
       run:
         cd src && npm install && npm install tcp-ping && npm install electron-builder -g && npm run distmac
     # 步骤二的名称：将编译后的结果上传
+     # 新增步骤：设置执行权限
+    - name: Set Permissions for reset File
+      run: chmod +x ./libs/darwin-x64/reset
     - name: Upload File
       # 使用预制action：上传文件，可以将执行路径打包成zip上传
       uses: actions/upload-artifact@v2
