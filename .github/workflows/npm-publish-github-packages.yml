@@ -39,7 +39,8 @@ jobs:
 
     # 新增步骤：更改reset文件的权限
     - name: Set Permissions for reset File
-      run: chmod +x .src/libs/darwin-x64/reset
+      run: chmod +x ./src/libs/darwin-x64/reset
+
 
     # 步骤一的名称：
     - name: Install and Build
