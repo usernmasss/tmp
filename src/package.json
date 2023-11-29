@@ -26,10 +26,10 @@
   },
   "build": {
     "mac": {
-      "icon": "./assets/logn.png"
+      "icon": "img/logn.jpg"
     },
     "win": {
-      "icon": "./assets/logn.png"
+      "icon": "img/logn.jpg"
     },
     "extraResources": {
       "from": "./libs/",
