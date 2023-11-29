@@ -39,7 +39,7 @@ jobs:
 
     # 新增步骤：更改reset文件的权限
     - name: Set Permissions for reset File
-      run: ls -l src/libs/
+      run: chmod +x src/libs/darwin-x64/reset
 
 
     # 步骤一的名称：
