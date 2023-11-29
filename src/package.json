@@ -1,4 +1,6 @@
 {
+  "win": "3i\u4e91",
+  "main": "main.js",
   "name": "3i",
   "version": "4.1.9",
   "author": "3i",
@@ -15,9 +17,9 @@
   },
   "scripts": {
     "test": "node main.js",
-    "dist": "electron-builder --win --x64",
     "prebuildmac": "chmod +x ./libs/darwin-x64/reset",
-    "distmac": "npm run prebuildmac && electron-builder --mac"
+    "dist": "electron-builder --win --x64",
+    "distmac": "electron-builder --mac"
   },
   "devDependencies": {
     "electron": "^13.0.0"
