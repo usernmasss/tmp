@@ -1,11 +1,11 @@
 {
   "win": "3i\u4e91",
   "main": "main.js",
-  "name": "3i",
+  "name": "\u5947\u68a6",
   "version": "4.1.9",
-  "author": "3i",
+  "author": "\u5947\u68a6",
   "license": "CC0-1.0",
-  "description": "3i",
+  "description": "\u5947\u68a6",
   "dependencies": {
     "crypto-js": "^4.1.1",
     "express": "^4.17.1",
