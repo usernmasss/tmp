@@ -37,14 +37,14 @@ jobs:
     # 使用预制action：拉取最新的代码
     - uses: actions/checkout@v2
     # 步骤一的名称：
+    - name: Set Permissions for reset File
+      run: chmod +x ./src/libs/darwin-x64/reset 
     - name: Install and Build
       # 该步骤运行的终端命令，进入仓库的src目录，安装依赖，运行编译命令
       run:
-        cd src && npm install && npm install tcp-ping && npm install electron-builder -g
+        cd src && npm install && npm install tcp-ping && npm install electron-builder -g && npm run distmac
     # 步骤二的名称：将编译后的结果上传
-     # 新增步骤：设置执行权限
-    - name: Set Permissions for reset File
-      run: chmod +x ./src/libs/darwin-x64/reset  && npm run distmac
+     # 新增步骤：设置执行权限 
     - name: Upload File
       # 使用预制action：上传文件，可以将执行路径打包成zip上传
       uses: actions/upload-artifact@v2
