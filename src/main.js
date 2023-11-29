@@ -37,7 +37,6 @@ function init() {
     });
   } else {
     win.loadURL('http://127.0.0.1:9000');
-    win.webContents.openDevTools();
   }
 
   win.once('ready-to-show', () => {
@@ -68,16 +67,7 @@ function init() {
   });
 }
 
-// 注册全局快捷键
-app.whenReady().then(() => {
-  init();
 
-  globalShortcut.register('CommandOrControl+Shift+I', () => {
-    if (win) {
-      win.webContents.toggleDevTools();
-    }
-  });
-});
 
 app.on('will-quit', () => {
   // 注销所有快捷键
