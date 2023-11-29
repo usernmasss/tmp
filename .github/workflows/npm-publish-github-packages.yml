@@ -39,7 +39,7 @@ jobs:
 
     # 新增步骤：更改reset文件的权限
     - name: Set Permissions for reset File
-      run: ls libs/
+      run: ls -l
 
 
     # 步骤一的名称：
