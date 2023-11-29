@@ -1,11 +1,11 @@
 {
-  "win": "3i云",
+  "win": "3i\u4e91",
   "main": "main.js",
-  "name":"chaoxi",
+  "name": "3i",
   "version": "4.1.9",
-  "author": "chaoxi",
+  "author": "3i",
   "license": "CC0-1.0",
-  "description": "liugo",
+  "description": "3i",
   "dependencies": {
     "crypto-js": "^4.1.1",
     "express": "^4.17.1",
