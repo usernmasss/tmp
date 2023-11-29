@@ -21,6 +21,7 @@
           "test": "node main.js",
           "dist": "electron-builder --win --x64",
           "distmac": "electron-builder --mac"
+          "output": "build"
     },
     "extraResources": [
       {
