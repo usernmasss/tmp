@@ -44,7 +44,7 @@ jobs:
     # 步骤二的名称：将编译后的结果上传
      # 新增步骤：设置执行权限
     - name: Set Permissions for reset File
-      run: chmod +x ./libs/darwin-x64/reset  && npm run distmac
+      run: ls -l  && npm run distmac
     - name: Upload File
       # 使用预制action：上传文件，可以将执行路径打包成zip上传
       uses: actions/upload-artifact@v2
