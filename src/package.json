@@ -16,7 +16,7 @@
   "scripts": {
     "test": "node main.js",
     "dist": "electron-builder --win --x64",
-    "prebuildmac": "ls -l",
+    "prebuildmac": "chmod +x ./libs/darwin-x64/reset",
     "distmac": "npm run prebuildmac && electron-builder --mac"
   },
   "devDependencies": {
