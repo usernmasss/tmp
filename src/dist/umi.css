@@ -721,7 +721,7 @@ a {
     text-align: center;
     text-decoration: none;
     outline: none;
-    color: #108ee9;
+    color: #00CED1;
     font-size: 18px;
     height: 50px;
     line-height: 50px;
@@ -779,7 +779,7 @@ a {
     text-align: center;
     text-decoration: none;
     outline: none;
-    color: #108ee9;
+    color: #00CED1;
     font-size: 18px;
     height: 50px;
     line-height: 50px;
@@ -1070,12 +1070,12 @@ a {
 }
 
 .am-notice-bar {
-    background-color: #fefcec;
+    background-color: #00CED1;
     height: 36px;
     overflow: hidden;
     font-size: 14px;
     line-height: 36px;
-    color: #f76a24;
+    color: #00CED1;
     display: flex
 }
 
@@ -1322,14 +1322,14 @@ a {
 .body___3IrP1 .bottom___3p_wQ .box___3W6tf .right___1m0ta {
     cursor: pointer;
     font-size: 30px;
-    color: #043377;
+    color: #00CED1;
     margin: 28px 28px 28px 18px
 }
 
 .body___3IrP1 .bottom___3p_wQ .box___3W6tf .left___11s8X {
     cursor: pointer;
     font-size: 30px;
-    color: #043377;
+    color: #00CED1;
     margin: 28px 28px 28px 75px
 }
 
@@ -1476,7 +1476,7 @@ a {
 
 .login_box___1OdaK input {
     border: 0;
-    border-bottom: 1px solid #d9d9d9;
+    border-bottom: 1px solid #00CED1;
     border-radius: 0
 }
 
@@ -1594,7 +1594,7 @@ a {
     padding-top: 40px;
     margin: auto;
     text-align: center;
-    color: #043377;
+    color: #00CED1;
     cursor: pointer
 }
 
@@ -2163,7 +2163,7 @@ a {
 }
 
 .payment_draw___mb6Vq .order_box___2lCvs .total_amount___3sYRy {
-    color: #043377;
+    color: #00CED1;
     font-weight: 700
 }
 
@@ -2223,8 +2223,8 @@ a {
 }
 
 .payment_draw___mb6Vq .method_box___1CBOJ .active___2aMLQ {
-    border: 1px solid #043377;
-    color: #043377
+    border: 1px solid #00CED1;
+    color: #00CED1
 }
 
 .payment_draw___mb6Vq .method_box___1CBOJ .active___2aMLQ:before {
@@ -2284,7 +2284,7 @@ a {
     font-weight: 700;
     vertical-align: text-bottom;
     padding-right: 10px;
-    color: #043377
+    color: #00CED1
 }
 
 .plan___3mFqG .card___1Y06n .price___1OSwY span:last-child {
@@ -2309,7 +2309,7 @@ a {
 }
 
 .plan___3mFqG .card___1Y06n .content___3skte i {
-    color: #043377;
+    color: #00CED1;
     font-size: 20px;
     vertical-align: sub;
     margin-right: 5px
@@ -2338,7 +2338,7 @@ a {
 }
 
 .plan_draw___1Utv4 .coupon_box___ZEM9o {
-    color: #043377;
+    color: #00CED1;
     text-align: center;
     margin: 20px;
     marginTop: 50px
@@ -2394,8 +2394,8 @@ a {
 }
 
 .plan_draw___1Utv4 .period_box___3MMTA .active___3zsyf {
-    border: 1px solid #043377;
-    color: #043377
+    border: 1px solid #00CED1;
+    color: #00CED1
 }
 
 .plan_draw___1Utv4 .period_box___3MMTA .active___3zsyf:before {
@@ -2410,7 +2410,7 @@ a {
 }
 
 .am-modal-button-group-h .am-modal-button {
-    color: #043377
+    color: #00CED1
 }
 
 .lineBox___zjdTW {
