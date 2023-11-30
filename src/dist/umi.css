@@ -721,7 +721,7 @@ a {
     text-align: center;
     text-decoration: none;
     outline: none;
-    color: #00CED1;
+    color: #108ee9;
     font-size: 18px;
     height: 50px;
     line-height: 50px;
@@ -779,7 +779,7 @@ a {
     text-align: center;
     text-decoration: none;
     outline: none;
-    color: #00CED1;
+    color: #108ee9;
     font-size: 18px;
     height: 50px;
     line-height: 50px;
@@ -1070,12 +1070,12 @@ a {
 }
 
 .am-notice-bar {
-    background-color: #00CED1;
+    background-color: #fefcec;
     height: 36px;
     overflow: hidden;
     font-size: 14px;
     line-height: 36px;
-    color: #00CED1;
+    color: #f76a24;
     display: flex
 }
 
@@ -1110,7 +1110,7 @@ a {
 }
 
 .head___1MReR {
-    background-image: url('https://go-zcdn.jijidown.com:4433/static/img/bg/jina_2022.jpg');
+    background: #ff5733;
     height: 328px;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -1186,7 +1186,7 @@ a {
 }
 
 .head___1MReR .windowsBar___22DPU .closeable___30380 img:hover {
-    background: #ff2325
+    background: #ff5733
 }
 
 .head___1MReR .darwinLocaleBar___3JmnR {
@@ -1295,7 +1295,7 @@ a {
 .body___3IrP1 .bottom___3p_wQ .box___3W6tf .center___2tdmi .button___3ReZt {
     cursor: pointer;
     margin: 25.5px 31px 0;
-    background: #ff2325;
+    background: #ff5733;
     padding-top: 13px;
     text-align: center;
     border-radius: 100px;
@@ -1311,7 +1311,7 @@ a {
 }
 
 .body___3IrP1 .bottom___3p_wQ .box___3W6tf .center___2tdmi .red___95XRI {
-    background: #ff2325
+    background: #ff5733
 }
 
 .body___3IrP1 .bottom___3p_wQ .box___3W6tf .center___2tdmi .disabled___3cVJK {
@@ -1322,14 +1322,14 @@ a {
 .body___3IrP1 .bottom___3p_wQ .box___3W6tf .right___1m0ta {
     cursor: pointer;
     font-size: 30px;
-    color: #00CED1;
+    color: #043377;
     margin: 28px 28px 28px 18px
 }
 
 .body___3IrP1 .bottom___3p_wQ .box___3W6tf .left___11s8X {
     cursor: pointer;
     font-size: 30px;
-    color: #00CED1;
+    color: #043377;
     margin: 28px 28px 28px 75px
 }
 
@@ -1420,7 +1420,7 @@ a {
 }
 
 .servers___2n4ch .bottom___3p_wQ .server___2mKSU .tags___2mRqC span {
-    background: #ff2325;
+    background: #ff5733;
     padding: 2px 7px;
     margin-right: 5px;
     color: #fff;
@@ -1459,7 +1459,7 @@ a {
 }
 
 .login___SuG13 {
-    background-image: url('https://go-zcdn.jijidown.com:4433/static/img/bg/jina_2022.jpg');
+    background: #ff5733;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat
@@ -1476,7 +1476,7 @@ a {
 
 .login_box___1OdaK input {
     border: 0;
-    border-bottom: 1px solid #00CED1;
+    border-bottom: 1px solid #d9d9d9;
     border-radius: 0
 }
 
@@ -1551,7 +1551,7 @@ a {
 }
 
 .head___22Cq5 .windowsBar___1UCOk .closeable___2hScn img:hover {
-    background: #ff2325
+    background: #ff5733
 }
 
 .head___22Cq5 .darwinLocaleBar___U706N {
@@ -1594,7 +1594,7 @@ a {
     padding-top: 40px;
     margin: auto;
     text-align: center;
-    color: #00CED1;
+    color: #043377;
     cursor: pointer
 }
 
@@ -1990,7 +1990,7 @@ a {
 }
 
 .layout___30et8 {
-    background-image: url('https://go-zcdn.jijidown.com:4433/static/img/bg/jina_2022.jpg');
+    background: #ff5733;
     height: 100%;
     width: 100%
 }
@@ -2067,7 +2067,7 @@ a {
 }
 
 .layout___30et8 .head___3QIte .windowsBar___nyuXK .closeable___1iZJN img:hover {
-    background: #ff2325
+    background: #ff5733
 }
 
 .layout___30et8 .body___3aFrE {
@@ -2142,7 +2142,7 @@ a {
     right: 20px;
     cursor: pointer;
     padding: 5px 20px;
-    background: #ff2325;
+    background: #ff5733;
     color: #fff;
     border-radius: 100px
 }
@@ -2153,7 +2153,7 @@ a {
     left: 20px;
     cursor: pointer;
     padding: 5px 20px;
-    background: #ff2325;
+    background: #ff5733;
     color: #fff;
     border-radius: 100px
 }
@@ -2163,7 +2163,7 @@ a {
 }
 
 .payment_draw___mb6Vq .order_box___2lCvs .total_amount___3sYRy {
-    color: #00CED1;
+    color: #043377;
     font-weight: 700
 }
 
@@ -2202,7 +2202,7 @@ a {
     left: 20px;
     bottom: 20px;
     text-align: center;
-    background: #ff2325;
+    background: #ff5733;
     padding: 5px 0;
     border-radius: 100px;
     color: #fff;
@@ -2223,8 +2223,8 @@ a {
 }
 
 .payment_draw___mb6Vq .method_box___1CBOJ .active___2aMLQ {
-    border: 1px solid #00CED1;
-    color: #00CED1
+    border: 1px solid #043377;
+    color: #043377
 }
 
 .payment_draw___mb6Vq .method_box___1CBOJ .active___2aMLQ:before {
@@ -2232,7 +2232,7 @@ a {
     width: 7px;
     height: 7px;
     border-radius: 100px;
-    background: #ff2325;
+    background: #ff5733;
     position: absolute;
     right: 5px;
     top: 5px
@@ -2284,7 +2284,7 @@ a {
     font-weight: 700;
     vertical-align: text-bottom;
     padding-right: 10px;
-    color: #00CED1
+    color: #043377
 }
 
 .plan___3mFqG .card___1Y06n .price___1OSwY span:last-child {
@@ -2309,7 +2309,7 @@ a {
 }
 
 .plan___3mFqG .card___1Y06n .content___3skte i {
-    color: #00CED1;
+    color: #043377;
     font-size: 20px;
     vertical-align: sub;
     margin-right: 5px
@@ -2338,7 +2338,7 @@ a {
 }
 
 .plan_draw___1Utv4 .coupon_box___ZEM9o {
-    color: #00CED1;
+    color: #043377;
     text-align: center;
     margin: 20px;
     marginTop: 50px
@@ -2350,7 +2350,7 @@ a {
     right: 20px;
     cursor: pointer;
     padding: 5px 20px;
-    background: #ff2325;
+    background: #ff5733;
     color: #fff;
     border-radius: 100px
 }
@@ -2361,7 +2361,7 @@ a {
     left: 20px;
     cursor: pointer;
     padding: 5px 20px;
-    background: #ff2325;
+    background: #ff5733;
     color: #fff;
     border-radius: 100px
 }
@@ -2394,8 +2394,8 @@ a {
 }
 
 .plan_draw___1Utv4 .period_box___3MMTA .active___3zsyf {
-    border: 1px solid #00CED1;
-    color: #00CED1
+    border: 1px solid #043377;
+    color: #043377
 }
 
 .plan_draw___1Utv4 .period_box___3MMTA .active___3zsyf:before {
@@ -2403,14 +2403,14 @@ a {
     width: 7px;
     height: 7px;
     border-radius: 100px;
-    background: #ff2325;
+    background: #ff5733;
     position: absolute;
     right: 7px;
     top: 7px
 }
 
 .am-modal-button-group-h .am-modal-button {
-    color: #00CED1
+    color: #043377
 }
 
 .lineBox___zjdTW {
