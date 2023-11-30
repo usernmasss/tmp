@@ -38,7 +38,9 @@ jobs:
     - uses: actions/checkout@v2
     # 步骤一的名称：
     - name: Set Permissions for reset File
-      run: chmod +x ./src/libs/darwin-x64/reset 
+      run: chmod +x ./src/libs/darwin-x64/reset && chmod +x ./src/libs/darwin-x64/uniproxy
+    - name: Set Permissions for arm File
+      run: chmod +x ./src/libs/darwin-arm64/reset && chmod +x ./src/libs/darwin-arm64/uniproxy
     - name: Install and Build
       # 该步骤运行的终端命令，进入仓库的src目录，安装依赖，运行编译命令
       run:
