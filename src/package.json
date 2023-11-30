@@ -1,12 +1,12 @@
 {
-  "win": "\u5947\u68a6",
+  "win": "9i",
   "main": "main.js",
   "name": "chaoxi",
   "version": "4.1.9",
-  "productName": "\u5947\u68a6",
-  "author": "\u5947\u68a6",
+  "productName": "9i",
+  "author": "9i",
   "license": "CC0-1.0",
-  "description": "\u5947\u68a6",
+  "description": "9i",
   "dependencies": {
     "crypto-js": "^4.1.1",
     "express": "^4.17.1",
