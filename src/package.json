@@ -1,12 +1,12 @@
 {
-  "win": "3i\u4e91\u68af",
+  "win": "7SUCLOUD",
   "main": "main.js",
   "name": "chaoxi",
   "version": "4.1.9",
-  "productName": "3i\u4e91\u68af",
-  "author": "3i\u4e91\u68af",
+  "productName": "7SUCLOUD",
+  "author": "7SUCLOUD",
   "license": "CC0-1.0",
-  "description": "3i\u4e91\u68af",
+  "description": "7SUCLOUD",
   "dependencies": {
     "crypto-js": "^4.1.1",
     "express": "^4.17.1",
