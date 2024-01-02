@@ -1,12 +1,12 @@
 {
-  "win": "7SUCLOUD",
+  "win": "hutou",
   "main": "main.js",
   "name": "chaoxi",
   "version": "4.1.9",
-  "productName": "7SUCLOUD",
-  "author": "7SUCLOUD",
+  "productName": "hutou",
+  "author": "虎头加速器",
   "license": "CC0-1.0",
-  "description": "7SUCLOUD",
+  "description": "hutou",
   "dependencies": {
     "crypto-js": "^4.1.1",
     "express": "^4.17.1",
