@@ -28,6 +28,7 @@ jobs:
         name: windows
         # 打包的路径以及文件过滤，此为仅打包dist目录下的exe文件
         path: D:\a\tmp\tmp\src\packs\*exe
+        retention-days: 1
   # 工作的名称“编译macOS版”
   buildmac:
     # 运行的操作系统 macOS BigSur
@@ -55,6 +56,7 @@ jobs:
         name: mac
         # 打包的路径以及文件过滤，此为仅打包dist目录下的dmg文件
         path:  src/packs/*.dmg
+        retention-days: 1
     - name: List Files in Working Directory
       run: |
         cd src
