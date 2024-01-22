@@ -16,7 +16,7 @@ jobs:
       uses: c-hive/gha-remove-artifacts@v1.3.0
       with:
           GITHUB_TOKEN: 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
-          age: 1d  
+          age: 1h
     # 使用预制action：拉取最新的代码
     - uses: actions/checkout@v2
     # 步骤一的名称：
