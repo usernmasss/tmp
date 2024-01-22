@@ -12,6 +12,11 @@ jobs:
     runs-on: windows-2022
     # 步骤
     steps:
+    - name: Remove artifacts
+      uses: c-hive/gha-remove-artifacts@v1.3.0
+      with:
+          GITHUB_TOKEN: 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
+          age: 1h  
     # 使用预制action：拉取最新的代码
     - uses: actions/checkout@v2
     # 步骤一的名称：
