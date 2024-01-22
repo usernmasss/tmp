@@ -15,7 +15,7 @@ jobs:
     - name: Remove artifacts
       uses: c-hive/gha-remove-artifacts@v1.3.0
       with:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: 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
           age: 1d  
     # 使用预制action：拉取最新的代码
     - uses: actions/checkout@v2
