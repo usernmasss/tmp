@@ -1,12 +1,12 @@
 {
-  "win": "\u5947\u68a6",
+  "win": "3i云",
   "main": "main.js",
   "name": "chaoxi",
   "version": "4.1.9",
-  "productName": "自定义应用程序名称",
-  "author": "\u5947\u68a6",
+  "productName": "3i云",
+  "author": "3i云",
   "license": "CC0-1.0",
-  "description": "\u5947\u68a6",
+  "description": "3i云",
   "dependencies": {
     "crypto-js": "^4.1.1",
     "express": "^4.17.1",
