@@ -27,10 +27,10 @@
   },
   "build": {
     "mac": {
-      "icon": "img/logn.jpg"
+      "icon": "img/yuyan.png"
     },
     "win": {
-      "icon": "img/logn.jpg"
+      "icon": "img/yuyan.png"
     },
     "extraResources": {
       "from": "./libs/",
