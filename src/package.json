@@ -26,12 +26,6 @@
     "electron": "^13.0.0"
   },
   "build": {
-    "mac": {
-      "icon": "img/yuyan.png"
-    },
-    "win": {
-      "icon": "img/yuyan.png"
-    },
     "extraResources": {
       "from": "./libs/",
       "to": "libs"
@@ -39,6 +33,5 @@
     "directories": {
       "output": "packs"
     }
-  },
-  "icon": "img/logn.jpg"
+  }
 }
