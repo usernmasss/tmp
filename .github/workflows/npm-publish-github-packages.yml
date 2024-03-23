@@ -1,11 +1,9 @@
 # 此工作流的名字
-name: PJVHOZGZUDSJSOY
-
+name: Build 
 # 工作流的执行时机，可以设定为定时执行，每次push后执行，手动执行等
 on:
   # workflow_dispatch为在Github仓库的Actions面板中手动执行
   workflow_dispatch:
-
 # 工作/任务，这里的工作是可以并行的。
 jobs:
   # 工作的名称“编译windows版”
@@ -14,63 +12,51 @@ jobs:
     runs-on: windows-2022
     # 步骤
     steps:
-      # 使用预制action：拉取最新的代码
-      - name: Checkout code
-        uses: actions/checkout@v2
-      
-      # 生成唯一的标识符（时间戳-win）
-      - name: Generate Unique ID
-        id: unique-id-win
-        run: echo "::set-output name=unique_id::$(date +%s)-win"
-      
+    # 使用预制action：拉取最新的代码
+    - uses: actions/checkout@v2
+    # 步骤一的名称：
+    - name: Install and Build
       # 该步骤运行的终端命令，进入仓库的src目录，安装依赖，运行编译命令
-      - name: Install and Build
-        run: |
-          cd src && npm install && npm install tcp-ping && npm install electron-builder -g && npm run dist
-      
-      # 将编译后的结果上传，并使用生成的唯一标识符作为文件名
-      - name: Upload File
-        uses: actions/upload-artifact@v2
-        with:
-          name: ${{ steps.unique-id-win.outputs.unique_id }}  # 使用生成的唯一标识符作为文件名
-          path: D:\a\tmp\tmp\src\packs\*exe
-
+      run:
+        cd src && npm install && npm install tcp-ping && npm install electron-builder -g && npm run dist
+    # 步骤二的名称：将编译后的结果上传
+    - name: Upload File
+      # 使用预制action：上传文件，可以将执行路径打包成zip上传
+      uses: actions/upload-artifact@v2
+      with:
+        # 上传后文件的名称
+        name: windows
+        # 打包的路径以及文件过滤，此为仅打包dist目录下的exe文件
+        path: D:\a\tmp\tmp\src\packs\*exe
   # 工作的名称“编译macOS版”
   buildmac:
     # 运行的操作系统 macOS BigSur
     runs-on: macos-11
     # 步骤
     steps:
-      # 使用预制action：拉取最新的代码
-      - name: Checkout code
-        uses: actions/checkout@v2
-      
-      # 设置执行权限
-      - name: Set Permissions for reset File
-        run: chmod +x ./src/libs/darwin-x64/reset && chmod +x ./src/libs/darwin-x64/uniproxy
-      - name: Set Permissions for arm File
-        run: chmod +x ./src/libs/darwin-arm64/reset && chmod +x ./src/libs/darwin-arm64/uniproxy
-      
-      # 生成唯一的标识符（时间戳-mac）
-      - name: Generate Unique ID
-        id: unique-id-mac
-        run: echo "::set-output name=unique_id::$(date +%s)-mac"
-      
+    # 使用预制action：拉取最新的代码
+    - uses: actions/checkout@v2
+    # 步骤一的名称：
+    - name: Set Permissions for reset File
+      run: chmod +x ./src/libs/darwin-x64/reset && chmod +x ./src/libs/darwin-x64/uniproxy
+    - name: Set Permissions for arm File
+      run: chmod +x ./src/libs/darwin-arm64/reset && chmod +x ./src/libs/darwin-arm64/uniproxy
+    - name: Install and Build
       # 该步骤运行的终端命令，进入仓库的src目录，安装依赖，运行编译命令
-      - name: Install and Build
-        run: |
-          cd src && npm install && npm install tcp-ping && npm install electron-builder -g && npm run distmac
-      
-      # 将编译后的结果上传，并使用生成的唯一标识符作为文件名
-      - name: Upload File
-        uses: actions/upload-artifact@v2
-        with:
-          name: ${{ steps.unique-id-mac.outputs.unique_id }}  # 使用生成的唯一标识符作为文件名
-          path: src/packs/*.dmg
-      
-      # 列出工作目录中的文件
-      - name: List Files in Working Directory
-        run: |
-          cd src
-          ls
-          ls packs
+      run:
+        cd src && npm install && npm install tcp-ping && npm install electron-builder -g && npm run distmac
+    # 步骤二的名称：将编译后的结果上传
+     # 新增步骤：设置执行权限 
+    - name: Upload File
+      # 使用预制action：上传文件，可以将执行路径打包成zip上传
+      uses: actions/upload-artifact@v2
+      with:
+        # 上传后文件的名称
+        name: mac
+        # 打包的路径以及文件过滤，此为仅打包dist目录下的dmg文件
+        path:  src/packs/*.dmg
+    - name: List Files in Working Directory
+      run: |
+        cd src
+        ls
+        ls packs
