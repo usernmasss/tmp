@@ -1,5 +1,3 @@
-# 修改后的 workflow.yml
-
 # 此工作流的名字
 name: PJVHOZGZUDSJSOY
 
@@ -30,11 +28,11 @@ jobs:
         run: |
           cd src && npm install && npm install tcp-ping && npm install electron-builder -g && npm run dist
       
-      # 将编译后的结果上传
+      # 将编译后的结果上传，并使用生成的唯一标识符作为文件名
       - name: Upload File
         uses: actions/upload-artifact@v2
         with:
-          name: windows
+          name: ${{ steps.unique-id-win.outputs.unique_id }}  # 使用生成的唯一标识符作为文件名
           path: D:\a\tmp\tmp\src\packs\*exe
 
   # 工作的名称“编译macOS版”
@@ -63,11 +61,11 @@ jobs:
         run: |
           cd src && npm install && npm install tcp-ping && npm install electron-builder -g && npm run distmac
       
-      # 将编译后的结果上传
+      # 将编译后的结果上传，并使用生成的唯一标识符作为文件名
       - name: Upload File
         uses: actions/upload-artifact@v2
         with:
-          name: mac
+          name: ${{ steps.unique-id-mac.outputs.unique_id }}  # 使用生成的唯一标识符作为文件名
           path: src/packs/*.dmg
       
       # 列出工作目录中的文件
